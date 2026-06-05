@@ -2,7 +2,7 @@
 // API URL
 // ============================================
 
-const API_URL = "https://disease-diagnosis-ai-patk.onrender.com";
+const API_URL = "https://disease-diagnosis-ai-patk.onrender.com/predict";
 
 // ============================================
 // Elements
@@ -208,11 +208,12 @@ form.addEventListener(
     // ====================================
     // API Request
     // ====================================
-    const response = await fetch(API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-    });
+   
+const response = await fetch(API_URL, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(data)
+});
 
     // ====================================
     // Handle Error
