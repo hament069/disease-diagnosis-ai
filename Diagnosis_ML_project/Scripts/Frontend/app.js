@@ -2,7 +2,7 @@
 // API URL
 // ============================================
 
-const API_URL = "http://127.0.0.1:8000/predict";
+const API_URL = "https://disease-diagnosis-api.onrender.com/predict";
 
 // ============================================
 // Elements
