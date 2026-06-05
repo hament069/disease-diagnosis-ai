@@ -2,7 +2,7 @@
 // API URL
 // ============================================
 
-const API_URL = "https://disease-diagnosis-api.onrender.com/predict";
+const API_URL = "https://disease-diagnosis-ai-patk.onrender.com";
 
 // ============================================
 // Elements
