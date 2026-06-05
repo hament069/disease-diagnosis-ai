@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MediSense AI | Intelligent Health Diagnosis Platform</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Splash Screen -->
+
+<div id="splash-screen">
+
+    <div class="splash-content">
+
+        <div class="splash-logo">🩺</div>
+
+        <h1>MediSense AI</h1>
+
+        <p>Initializing Healthcare Intelligence System...</p>
+
+        <div class="loader"></div>
+
+    </div>
+
+</div>
+
+<!-- Background Effects -->
+
+<div class="background-glow glow-1"></div>
+<div class="background-glow glow-2"></div>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo-section">
+
+            <div class="logo">🩺</div>
+
+            <div>
+
+                <h1>MediSense AI</h1>
+
+                <p>Intelligent Health Diagnosis Platform</p>
+
+            </div>
+
+        </div>
+
+        <button id="themeToggle" class="theme-btn">
+            🌙 Dark Mode
+        </button>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>
+                AI-Powered Healthcare Diagnosis & Treatment Recommendation System
+            </h2>
+
+            <p>
+                Predict diseases, assess severity levels, and generate treatment recommendations using advanced Machine Learning models.
+            </p>
+
+            <div class="hero-features">
+
+                <div class="feature">✓ Diagnosis Prediction</div>
+
+                <div class="feature">✓ Severity Assessment</div>
+
+                <div class="feature">✓ Treatment Recommendation</div>
+
+                <div class="feature">✓ Fast Analysis</div>
+
+            </div>
+
+            <button class="hero-btn" onclick="scrollToForm()">
+                Start Diagnosis
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h3>95%+</h3>
+
+            <p>Prediction Accuracy</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>3</h3>
+
+            <p>AI Models</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>24/7</h3>
+
+            <p>Instant Analysis</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>AI</h3>
+
+            <p>Medical Intelligence</p>
+
+        </div>
+
+    </section>
+
+    <!-- Main Grid -->
+
+    <section class="main-grid">
+
+        <!-- Patient Form -->
+
+        <div class="card" id="formSection">
+
+            <div class="card-title">
+
+                <h3>Patient Information</h3>
+
+                <p>
+                    Enter patient details for diagnosis prediction
+                </p>
+
+            </div>
+
+            <form id="predictionForm">
+
+                <!-- Basic Information -->
+
+                <h4>Basic Information</h4>
+
+                <div class="row">
+
+                    <div class="form-group">
+
+                        <label>Patient Name</label>
+
+                        <input
+                            type="text"
+                            id="patientName"
+                            placeholder="Enter patient name"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Age</label>
+
+                        <input
+                        type="number"
+                        id="Age"
+                        placeholder="Enter age"
+                        min="0"
+                        max="120"
+                        required>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Gender</label>
+
+                    <select id="Gender" required>
+
+                        <option value="Male">Male</option>
+
+                        <option value="Female">Female</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Symptoms -->
+
+                <h4>Symptoms</h4>
+
+                <div class="form-group">
+
+                    <label>Primary Symptom</label>
+
+                    <select id="Symptom_1" required>
+
+                        <option value="">Select Symptom</option>
+                        <option value="Fatigue">Fatigue</option>
+                        <option value="Sore throat">Sore throat</option>
+                        <option value="Body ache">Body ache</option>
+                        <option value="Shortness of breath">Shortness of breath</option>
+                        <option value="Runny nose">Runny nose</option>
+                        <option value="Headache">Headache</option>
+                        <option value="Cough">Cough</option>
+                        <option value="Fever">Fever</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Secondary Symptom</label>
+
+                    <select id="Symptom_2" required>
+
+                        <option value="">Select Symptom</option>
+                        <option value="Fatigue">Fatigue</option>
+                        <option value="Sore throat">Sore throat</option>
+                        <option value="Body ache">Body ache</option>
+                        <option value="Shortness of breath">Shortness of breath</option>
+                        <option value="Runny nose">Runny nose</option>
+                        <option value="Headache">Headache</option>
+                        <option value="Cough">Cough</option>
+                        <option value="Fever">Fever</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Additional Symptom</label>
+
+                    <select id="Symptom_3" required>
+
+                        <option value="">Select Symptom</option>
+                        <option value="Fatigue">Fatigue</option>
+                        <option value="Sore throat">Sore throat</option>
+                        <option value="Body ache">Body ache</option>
+                        <option value="Shortness of breath">Shortness of breath</option>
+                        <option value="Runny nose">Runny nose</option>
+                        <option value="Headache">Headache</option>
+                        <option value="Cough">Cough</option>
+                        <option value="Fever">Fever</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Vital Signs -->
+
+                <h4>Vital Signs</h4>
+
+                <div class="row">
+
+                    <div class="form-group">
+
+                        <label>Heart Rate (bpm)</label>
+
+                       <input
+                        type="number"
+                         id="Heart_Rate_bpm"
+                         placeholder="72"
+                         min="30"
+                         max="220"
+                         required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Body Temperature (°C)</label>
+
+                       <input
+                        type="number"
+                        step="0.1"
+                        id="Body_Temperature_C"
+                        placeholder="37.0"
+                        min="30"
+                        max="45"
+                        required>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group">
+
+                        <label>Blood Pressure (mmHg)</label>
+
+                        <input
+                            type="text"
+                            id="Blood_Pressure_mmHg"
+                            placeholder="132/91"
+                            pattern="^\d{2,3}/\d{2,3}$"
+                            required>
+
+                        <small>
+                            Example: 132/91
+                        </small>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Oxygen Saturation (%)</label>
+
+                        <input
+                        type="number"
+                        id="Oxygen_Saturation_pct"
+                        placeholder="98"
+                        min="50"
+                        max="100"
+                        required>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="predict-btn">
+
+                    Analyze Patient
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Results -->
+
+        <div class="card">
+
+            <div class="card-title">
+
+                <h3>Patient Report</h3>
+
+                <p>
+                    AI Generated Medical Assessment
+                </p>
+
+            </div>
+
+            <div id="results">
+
+                <div class="placeholder">
+
+                    <div class="medical-icon">
+                        🏥
+                    </div>
+
+                    <h3>
+                        No Analysis Available
+                    </h3>
+
+                    <p>
+                        Fill the patient information and run diagnosis.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 MediSense AI</p>
+
+        <p>Intelligent Healthcare Prediction Platform</p>
+
+    </footer>
+
+</div>
+
+<script src="app.js"></script>
+```
+
+</body>
+
+</html>

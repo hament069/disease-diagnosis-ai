@@ -1,0 +1,14 @@
+python
+Pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+catboost
+scipy
+joblib
+flask
+HTML
+CSS
+JS
